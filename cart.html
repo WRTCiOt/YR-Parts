@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warenkorb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="12.png" alt="MeinShop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Über Uns</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="cart.html" id="cart-link">Warenkorb <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cart-page">
+        <section class="cart">
+            <h2>Ihr Warenkorb</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Warenkorb-Artikel werden hier dynamisch hinzugefügt -->
+            </div>
+            <button id="checkout-button" class="cool-button">Checkout</button>
+            <button id="back-button" class="cool-button">Zurück zur Homepage</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MeinShop. Alle Rechte vorbehalten.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

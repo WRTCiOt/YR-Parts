@@ -1,0 +1,9 @@
+Produkt 1
+produkt1.png
+Preis: €29,99
+Beschreibung: Schnellgasgriff CNC inkl. Bowdenzug - versch. Farben
+
+Produkt 2
+produkt2.jpg
+Preis: €.661,86
+Beschreibung: Komplettmotor MTX130 "Flagschiff"

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="12.png" alt="MeinShop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Über Uns</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="cart.html" id="cart-link">Warenkorb <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Suche nach Produkten...">
+                <button id="search-button">Suche</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Willkommen in unserem Online-Shop</h2>
+            <p>Die besten Produkte zu den besten Preisen.</p>
+        </section>
+        <section class="products" id="product-list">
+            <h2>Unsere Produkte</h2>
+            <div class="product-grid">
+                <!-- Beispielprodukt -->
+                <div class="product-card" data-name="Schnellgasgriff CNC inkl. Bowdenzug - versch. Farben" data-price="29.99">
+                    <img src="product1.jpg" alt="Produkt 1">
+                    <h3>Schnellgasgriff CNC inkl. Bowdenzug - versch. Farben</h3>
+                    <p>€29,99</p>
+                    <button class="add-to-cart-button cool-button">In den Warenkorb</button>
+                </div>
+                <div class="product-card" data-name="Komplettmotor MTX130 'Flagschiff'" data-price="3661.86">
+                    <img src="product2.jpg" alt="Komplettmotor MTX130 'Flagschiff'">
+                    <h3>Komplettmotor MTX130 'Flagschiff'</h3>
+                    <p>€3.661,86</p>
+                    <button class="add-to-cart-button cool-button">In den Warenkorb</button>
+                </div>
+                <!-- Weitere Produkte hier -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MeinShop. Alle Rechte vorbehalten.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

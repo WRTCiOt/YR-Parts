@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="12.png" alt="Logo" id="logo">
+        <h1>Admin Login</h1>
+    </header>
+    <main>
+        <section id="admin-login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginError" style="color: red; display: none;">Ungültiger Benutzername oder Passwort</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simson Teile Shop. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'GeorgChef4' && password === '3kSla12B.1') {
+                window.location.href = 'admin_dashboard.html';
+            } else {
+                document.getElementById('loginError').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

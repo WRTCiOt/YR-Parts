@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="12.png" alt="Logo" id="logo">
+        <h1>Admin Dashboard</h1>
+    </header>
+    <main>
+        <section id="add-product">
+            <h2>Produkt hinzufügen</h2>
+            <form id="addProductForm">
+                <label for="product-name">Produktname:</label>
+                <input type="text" id="product-name" name="product-name">
+                <label for="product-description">Produktbeschreibung:</label>
+                <textarea id="product-description" name="product-description"></textarea>
+                <button type="submit">Produkt hinzufügen</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simson Teile Shop. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script>
+        document.getElementById('addProductForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('product-name').value;
+            const description = document.getElementById('product-description').value;
+            addProduct(name, description);
+            alert('Produkt hinzugefügt!');
+        });
+
+        function addProduct(name, description) {
+            let products = JSON.parse(localStorage.getItem('products')) || [];
+            products.push({ name, description });
+            localStorage.setItem('products', JSON.stringify(products));
+        }
+    </script>
+</body>
+</html>
